@@ -1,0 +1,21 @@
+
+State variable in react?
+    : State is a global object which is used to change
+      UI of your web components.
+      It is used since props is read only
+      so values can't be change dynamicaly using props.
+
+
+Doubt!!!!
+JSX Prevents Injection Attacks
+It is safe to embed user input in JSX:
+
+const title = response.potentiallyMaliciousInput;
+// This is safe:
+const element = <h1>{title}</h1>;
+
+  By default, React DOM escapes any values embedded in JSX
+  before rendering them. Thus it ensures that you can never inject
+  anything that’s not explicitly written in your application.
+  Everything is converted to a string before being rendered.
+  This helps prevent XSS (cross-site-scripting) attacks.
